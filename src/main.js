@@ -1,9 +1,7 @@
+import { initReviewsSection } from './js/reviews.js';
 
+initReviewsSection();
 
-
-
-
-
-import { initAccardionFaq } from "./js/faq.js";
+import { initAccardionFaq } from './js/faq.js';
 
 initAccardionFaq();
