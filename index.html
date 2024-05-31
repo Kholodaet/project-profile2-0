@@ -7,7 +7,9 @@
     <title>Portfolio 2.0</title>
     
     <script type="module" crossorigin src="/project-profile2-0/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-profile2-0/assets/index-4f1d5824.css">
+    <link rel="modulepreload" crossorigin href="/project-profile2-0/assets/vendor-3dfbc4cf.js">
+    <link rel="stylesheet" href="/project-profile2-0/assets/vendor-b51df72b.css">
+    <link rel="stylesheet" href="/project-profile2-0/assets/index-8b5deadd.css">
   </head>
 
   <body>
@@ -26,14 +28,19 @@
         <h2 class="reviews-title">Reviews</h2>
 
         <div class="swiper" id="swiper3">
-            <p class="show-news"></p>
             <ul class="swiper-wrapper" id="review-swiper-list"></ul>
-
+            <!--   `<li class="reviews-list-item swiper-slide" id="${_id}">
+            <p class="review">${review}</p>
+            <div class="opinion">
+             <img class="thumbnail" src="${avatar_url}" alt="${author}" width="48" height="48" loading="lazy">
+              <h3 class="author">${author}</h3>
+           </div>
+         </li>` -->
             <div class="slider-buttons">
                 <div class="btn-prev-review-wrapper">
                     <button class="btn-prev-review" aria-label="Previous Review">
                         <svg class="reviews-arrow-left">
-                            <use href="./img/icon.svg#icon-arrow-left-dark"></use>
+                            <use href="../img/symbol-defs.svg/#icon-arrow-left"></use>
                         </svg>
                     </button>
                 </div>
@@ -41,7 +48,7 @@
                 <div class="btn-next-review-wrapper">
                     <button class="btn-next-review" aria-label="Next Review">
                         <svg class="reviews-arrow-right">
-                            <use href="./img/icon.svg#icon-arrow-right-white"></use>
+                            <use href="../img/symbol-defs.svg#icon-arrow-right"></use>
                         </svg>
                     </button>
                 </div>
