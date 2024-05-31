@@ -49,7 +49,7 @@ ul {
         sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 123%;
+    line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
@@ -64,7 +64,6 @@ ul {
 
 .text-div-projects {
     display: flex;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -76,9 +75,10 @@ ul {
 }
 
 .technology-info {
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.50;
     letter-spacing: 0.03em;
     color: #292929;
     margin-bottom: 16px;
@@ -86,10 +86,10 @@ ul {
 
 .portfolio-title {
     font-family: "Poppins",
-        sans-serif;;
+        sans-serif;
     font-weight: 500;
     font-size: 32px;
-    line-height: 125%;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #292929;
@@ -101,7 +101,7 @@ ul {
 .link-projects {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.50;
     letter-spacing: 0.03em;
     color: #292929;
     border-radius: 8px;
@@ -149,8 +149,8 @@ ul {
 
 .load-more {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 18px;
+    line-height: 1.56;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: black;
@@ -214,7 +214,7 @@ ul {
     .text-projects {
         font-weight: 400;
         font-size: 108px;
-        line-height: 115%;
+        line-height: 1.15;
         letter-spacing: 0.02em;
         text-align: center;
         width: 600px;
@@ -239,7 +239,11 @@ ul {
         width: auto;
 
     }
-
+.load-more {
+font-weight: 400;
+    font-size: 20px;
+    line-height: 1.60;
+}
 }
 
 
@@ -291,7 +295,6 @@ ul {
 
     .container {
         max-width: 320px;
-
     }
 
     .img-portfolio {
