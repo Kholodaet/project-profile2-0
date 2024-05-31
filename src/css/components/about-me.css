@@ -1,40 +1,21 @@
-.about-me {
-  background: url('path/to/background.png') no-repeat center center;
-  background-size: cover;
-  padding: 40px 20px;
-}
-
 .about-me h2 {
-  text-align: center;
   font-family: Impact;
   font-size: 52px;
   letter-spacing: 1.8px;
   line-height: 64px;
-  color: #333;
-}
-
-.about-me h2 span {
-  color: #27ae60;
-}
-
-.content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  color: #292929;
   margin-bottom: 40px;
 }
 
-.bio {
-  max-width: 60%;
-  margin-left: 20px;
+.about-me h2 span {
+  color: #00b068;
+}
+
+.foto {
+  border-radius: 10px;
+  width: 320px;
+  height: 374px;
+  margin-bottom: 40px;
 }
 
 .bio h3 {
@@ -54,7 +35,7 @@
   line-height: 24px;
 }
 
-.bio p:last-child {
+.bio {
   margin-bottom: 40px;
 }
 
@@ -89,13 +70,8 @@
 
 .education-role {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
-}
-
-.education,
-.role {
-  max-width: 45%;
+  flex-direction: column;
 }
 
 .role h3 {
@@ -106,30 +82,133 @@
   margin-bottom: 32px;
 }
 
-/* @media (max-width: 1280px) {
-  .bio {
-    max-width: 55%;
-  }
-} */
+.content {
+  flex-direction: column;
+}
 
-@media (max-width: 768px) {
+.bio {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.fon {
+  display: none;
+}
+
+.education-role {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .about-me h2 {
+    font-size: 108px;
+    letter-spacing: 1.8px;
+    line-height: 124px;
+  }
+
   .content {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .foto {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+    max-width: none;
   }
 
   .bio {
-    max-width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 32px;
+  }
+
+  .bio h3 {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+  }
+
+  .bio p {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+
+  .fon {
+    position: absolute;
+    width: 336px;
+    height: 252px;
+    display: flex;
+  }
+
+  .about {
+    margin-bottom: 24px;
+  }
+
+  .education h3 {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+  }
+
+  .role h3 {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    line-height: 48px;
   }
 
   .education-role {
-    flex-direction: column;
+    flex-direction: unset;
+    gap: 32px;
   }
 
-  .education,
-  .role {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .education {
+    max-width: 55%;
+  }
+
+  .educ-element {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me h2 {
+    text-align: start;
+  }
+
+  .content {
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .bio {
+    max-width: 30%;
+    margin-left: 136px;
+  }
+
+  .foto {
+    width: 384px;
+    height: 448px;
+  }
+
+  .fon {
+    bottom: -10%;
+    right: -5%;
+    width: 384px;
+    height: 288px;
+  }
+
+  .education-role {
+    justify-content: center;
+    gap: 136px;
+  }
+
+  .education {
+    max-width: 40%;
   }
 }
