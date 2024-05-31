@@ -1,28 +1,13 @@
-// const renderReview = ({ _id, avatar_url, author, review }) => {
-//   return
-//    `<li class="reviews-list-item swiper-slide" id="${_id}">
-//       <img class="thumbnail" src="${avatar_url}" alt="${author}" width="48" height="48" loading="lazy">
-//       <div class="opinion">
-//         <h3 class="author">${author}</h3>
-//         <p class="review">${review.trim()}</p>
-//       </div>
-//     </li>`;
-// };
-
-// export function renderReviews(reviews) {
-//   return reviews.map(renderReview).join('');
-// }
-
 export const createMarkupReview = reviews => {
   return reviews 
     .map(
       ({ _id, avatar_url, author, review  }) => {
         return (
           `<li class="reviews-list-item swiper-slide" id="${_id}">
-            <img class="thumbnail" src="${avatar_url}" alt="${author}" width="48" height="48" loading="lazy">
+            <p class="review">${review}</p>
             <div class="opinion">
+             <img class="thumbnail" src="${avatar_url}" alt="${author}" width="48" height="48" loading="lazy">
               <h3 class="author">${author}</h3>
-             <p class="review">${review}</p>
            </div>
          </li>`
         );

@@ -6,7 +6,7 @@ import { createMarkupReview } from './render-functions';
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 const list = document.querySelector('#review-swiper-list');
 
-const fetchDataAndInitializeSwiper = async () => {
+export const fetchDataAndInitializeSwiper = async () => {
   try {
     const response = await fetch(URL);
     if (!response.ok) {
@@ -52,26 +52,3 @@ const fetchDataAndInitializeSwiper = async () => {
   }
 };
 
-export { fetchDataAndInitializeSwiper };
-
-// import axios from "axios";
-
-// const API_KEY = '43820023-fa202629be5215ad836dbfc98';
-// const API_URL = 'https://pixabay.com/api/';
-
-// export const fetchData = async (queryString, page) => {
-//   const searchParams = await axios.get(API_URL, {
-//     params: {
-//       key: API_KEY,
-//       q: queryString,
-//       image_type: 'photo',
-//       orientation: 'horizontal',
-//       safesearch: true,
-//       page: page,
-//       per_page: 15,
-//     },
-//   });
-
-//   return searchParams;
-
-// };
