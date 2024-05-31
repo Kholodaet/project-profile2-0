@@ -1,0 +1,173 @@
+.section-title {
+  background-image: url('../img/hero/decor1x-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-title {
+    background-image: url('../img/hero/decor2x-min.png');
+  }
+}
+.page-title {
+  padding-top: 96px;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.page-name {
+  color: #00b068;
+}
+.photo-display {
+  display: none;
+}
+.page-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px 0;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  background-color: rgba(0, 176, 104, 0.2);
+  margin-left: auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #00b068;
+}
+
+.btn-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.btn-icon {
+  fill: #00b068;
+  padding-right: 12px;
+}
+.page-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 72px;
+}
+.page-item-link {
+  background-color: #e4e5e6;
+  padding: 32px 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.page-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+.page-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-link:hover,
+.page-link:active,
+.page-link:focus {
+  color: #00b068;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    background-image: url('../img/hero/decor1x-tab-min.png');
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-title {
+      background-image: url('../img/hero/decor2x-tab-min.png');
+    }
+  }
+  .page-title {
+    padding-top: 88px;
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 1.14706;
+    letter-spacing: 0.01em;
+  }
+  .page-button {
+    padding: 60px 0;
+  }
+  .btn {
+    width: 261px;
+    height: 96px;
+    margin-left: 142px;
+  }
+  .btn-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .page-text {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 80px;
+  }
+  .page-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
+  .page-item-link {
+    padding: 40px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-title {
+    background-image: url('../img/hero/decor1x.png');
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-title {
+      background-image: url('../img/hero/decor2x.png');
+    }
+  }
+  .page-title {
+    padding-top: 168px;
+    font-size: 136px;
+    line-height: 1.14706;
+    letter-spacing: 0.01em;
+  }
+  .photo-display {
+    display: flex;
+  }
+}
