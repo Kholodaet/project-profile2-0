@@ -61,7 +61,7 @@
 }
 
 .educ-element:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .education {
@@ -176,7 +176,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .about-me h2 {
     text-align: start;
   }
@@ -203,12 +203,29 @@
     height: 288px;
   }
 
-  .education-role {
+  /* .education-role {
     justify-content: center;
     gap: 136px;
-  }
+  } */
 
-  .education {
+  /* .education {
     max-width: 40%;
+  } */
+  .education-role {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 136px;
+  }
+  .educ-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .role-item {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
   }
 }
