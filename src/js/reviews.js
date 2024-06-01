@@ -41,8 +41,8 @@ export const initializeSwiper = async () => {
         },
       },
       navigation: {
-        nextEl: '.btn-next-review',
-        prevEl: '.btn-prev-review',
+        nextEl: '.btn-next-review-wrapper btn-custom-next',
+        prevEl: '.btn-prev-review-wrapper btn-custom-prev',
       },
     });
   } catch (error) {
@@ -53,7 +53,6 @@ export const initializeSwiper = async () => {
     });
   }
 };
-
 
 export function initReviewsSection() {
   initializeSwiper();
