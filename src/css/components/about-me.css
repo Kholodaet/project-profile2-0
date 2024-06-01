@@ -15,14 +15,14 @@
   border-radius: 10px;
   width: 320px;
   height: 374px;
-  margin-bottom: 40pxтзь;
+  margin-bottom: 40px;
 }
 
 .bio h3 {
   font-family: Poppins;
   font-size: 32px;
-  letter-spacing: 0.5px;
-  line-height: 40px;
+  letter-spacing: 0.0001em;
+  line-height: 1.5;
   margin-bottom: 32px;
 }
 
@@ -176,7 +176,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .about-me h2 {
     text-align: start;
   }
@@ -192,12 +192,13 @@
   }
 
   .foto {
+    margin-top: 272px;
     width: 384px;
     height: 448px;
   }
 
   .fon {
-    bottom: -10%;
+    bottom: -20%;
     right: -5%;
     width: 384px;
     height: 288px;
