@@ -1,7 +1,7 @@
 .about-me h2 {
   font-family: Impact;
   font-size: 52px;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.03em;
   line-height: 64px;
   color: #292929;
   margin-bottom: 40px;
@@ -15,7 +15,7 @@
   border-radius: 10px;
   width: 320px;
   height: 374px;
-  margin-bottom: 40px;
+  margin-bottom: 40pxтзь;
 }
 
 .bio h3 {
@@ -31,8 +31,8 @@
   color: #292929;
   font-family: Poppins;
   font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
 }
 
 .bio {
@@ -42,8 +42,8 @@
 .education h3 {
   font-family: Poppins;
   font-size: 32px;
-  letter-spacing: 0.5px;
-  line-height: 40px;
+  letter-spacing: 0.0001em;
+  line-height: 1.5;
   margin-bottom: 32px;
 }
 
@@ -51,8 +51,8 @@
   color: #292929;
   font-family: Poppins;
   font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
   list-style-type: disc;
 }
 
@@ -77,8 +77,8 @@
 .role h3 {
   font-family: Poppins;
   font-size: 32px;
-  letter-spacing: 0.5px;
-  line-height: 40px;
+  letter-spacing: 0.0001em;
+  line-height: 1.5;
   margin-bottom: 32px;
 }
 
@@ -102,8 +102,8 @@
 @media (min-width: 768px) {
   .about-me h2 {
     font-size: 108px;
-    letter-spacing: 1.8px;
-    line-height: 124px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
   }
 
   .content {
@@ -127,14 +127,14 @@
 
   .bio h3 {
     font-size: 36px;
-    letter-spacing: 0.5px;
-    line-height: 48px;
+    letter-spacing: 0.005em;
+    line-height: 1.5;
   }
 
   .bio p {
     font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
   }
 
   .fon {
@@ -150,18 +150,18 @@
 
   .education h3 {
     font-size: 36px;
-    letter-spacing: 0.5px;
-    line-height: 48px;
+    letter-spacing: 0.005em;
+    line-height: 1.5;
   }
 
   .role h3 {
     font-size: 36px;
-    letter-spacing: 0.5px;
-    line-height: 48px;
+    letter-spacing: 0.005em;
+    line-height: 1.5;
   }
 
   .education-role {
-    flex-direction: unset;
+    flex-direction: row;
     gap: 32px;
   }
 
@@ -171,8 +171,8 @@
 
   .educ-element {
     font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
   }
 }
 
@@ -227,5 +227,24 @@
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
+  }
+
+  .education-role {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 136px;
+  }
+
+  .educ-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .role-item {
+    display: flex;
+    flex-direction: column;
   }
 }
