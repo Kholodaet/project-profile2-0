@@ -1,3 +1,7 @@
+.section-projects {
+  padding-top: 80px;
+}
+
 .tablet-img {
   display: none;
 }
@@ -153,6 +157,9 @@
   .decstop-img {
     display: none;
   }
+  .section-projects {
+    padding-top: 124px;
+  }
 
   .mob-img {
     display: none;
@@ -203,6 +210,10 @@
 @media screen and (min-width: 1280px) {
   .tablet-img {
     display: none;
+  }
+
+  .section-projects {
+    padding-top: 164px;
   }
 
   .mob-img {
