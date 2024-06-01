@@ -3,11 +3,11 @@ export const createMarkupReview = reviews => {
     .map(
       ({ _id, avatar_url, author, review  }) => {
         return (
-          `<li class="reviews-list-item swiper-slide" id="${_id}">
-            <p class="review">${review}</p>
-            <div class="opinion">
-             <img class="thumbnail" src="${avatar_url}" alt="${author}" width="48" height="48" loading="lazy">
-              <h3 class="author">${author}</h3>
+          `<li class="review-card swiper-slide" id="${_id}">
+            <p class="review-card-text">${review}</p>
+            <div class="review-card-author">
+             <img class="review-card-author-avata" src="${avatar_url}" alt="${author}" alt="review author photo" width="40" height="40" loading="lazy">
+              <p class="review-card-author-name">${author}</p>
            </div>
          </li>`
         );
