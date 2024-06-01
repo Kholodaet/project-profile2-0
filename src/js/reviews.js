@@ -41,8 +41,8 @@ export const initializeSwiper = async () => {
         },
       },
       navigation: {
-        nextEl: '.btn-next-review-wrapper btn-custom-next',
-        prevEl: '.btn-prev-review-wrapper btn-custom-prev',
+        nextEl: '.custom-button-next',
+        prevEl: '.custom-button-prev',
       },
     });
   } catch (error) {
