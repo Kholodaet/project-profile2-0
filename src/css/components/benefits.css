@@ -1,18 +1,10 @@
 /* mobile */
 .section-benefits {
   padding-top: 80px;
-  /* padding-bottom: 80px; */
-  /* padding-left: 20px;
-padding-right: 20px; */
-  /* max-width: 375px;
-  height: 100%;
-  margin: 0 auto; */
-  /* width: 320px;
-  height: 100%; */
+  padding-bottom: 80px;
 }
 
 .container-benefits {
-  /* padding-left: 0; */
   width: 320px;
   height: 100%;
 }
@@ -29,7 +21,7 @@ padding-right: 20px; */
 }
 
 .section-benefits-title-part {
-  color: #00c292;
+  color: #00b068;
 }
 
 .section-benefits-list {
@@ -87,11 +79,6 @@ padding-right: 20px; */
   .section-benefits {
     padding-top: 124px;
     padding-bottom: 124px;
-    /* padding-left: 32px;
-    padding-right: 32px;
-    max-width: 768px; */
-    /* padding-top: 0;
-    padding-bottom: 124px; */
   }
 
   /* .container-benefits {
@@ -148,17 +135,10 @@ padding-right: 20px; */
   .section-benefits {
     padding-top: 164px;
     padding-bottom: 164px;
-    /* padding-left: 32px; */
-    /* padding-right: 32px; */
-    /* max-width: 1280px; */
-  }
 
-  .container-benefits {
-    width: 1216px;
-  }
-
-  .section-benefits-title {
-    width: 681px;
+    background-image: url('/img/benefits/decor-bg-1x.png');
+    background-repeat: no-repeat;
+    background-position: right 0px top 0px;
   }
 
   .section-benefits-list {
@@ -197,3 +177,10 @@ padding-right: 20px; */
     width: 384px;
   }
 }
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-benefits {
+    background-image: url('/img/benefits/decor-bg-2x.png');
+  } */

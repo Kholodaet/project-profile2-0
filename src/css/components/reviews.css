@@ -3,7 +3,7 @@
 }
 
 .reviews-container {
-  max-width: 375px;
+  max-width: 704px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -35,18 +35,26 @@
   flex-direction: column;
   justify-content: space-between;
   background: #e4e5e6;
+  display: flex;
+  width: 704px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
-.review-card-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+
+  /* body 1 */
+  font-family: Poppins;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #292929;
-  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
 }
-
+.review-card-author-avata {
+  border-radius: 24px;
+}
 .review-card-author {
   margin-top: 24px;
   display: flex;
@@ -165,3 +173,21 @@
     background-color: #e4e5e6;
   }
 }
+
+
+.review-card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+
+  /* text-align: center; */
+  opacity: 0.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* margin-bottom: 24px; */
+  height: 96px;
+  align-self: stretch;
+  color: var(--Black, #292929);
