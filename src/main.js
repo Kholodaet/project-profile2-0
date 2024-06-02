@@ -11,7 +11,6 @@ import { showProjects } from './js/my-projects';
 showProjects();
 //=======
 //=======
-initReviewsSection();
 
 import { initAccardionFaq } from './js/faq.js';
 
