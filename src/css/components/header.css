@@ -1,5 +1,5 @@
 .container-header {
-  padding: 36px 20px;
+  padding: 36px 16px;
 }
 
 .logo-first-name {
@@ -17,7 +17,6 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1.5px;
-  text-align: left;
   color: #00b068;
 }
 .menu {
@@ -51,10 +50,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* display: flex;
-  flex-direction: column; */
-  /* transform: translateX(100%);
-  transition: all 350ms var(--hover-effect); */
   padding: 36px 20px;
 }
 .mobile-menu {
@@ -68,7 +63,6 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.06em;
-  /* text-align: left; */
   color: #292929;
 }
 .logo-second {
@@ -84,7 +78,7 @@
   justify-content: space-between;
   height: 64px;
   align-items: center;
-  /* padding: 20px 0; */
+  /* padding: 16px 0; */
 }
 .back-img {
   max-width: 100%;
@@ -104,10 +98,7 @@
 .mobile-close-btn {
   cursor: pointer;
   border: none;
-  /* width: 32px;
-  height: 32px; */
   stroke: #292929;
-  /* background-color: #00b068; */
   padding: 0;
   line-height: 0;
   background-color: transparent;
@@ -135,8 +126,8 @@
   font-family: 'Poppins';
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   text-align: left;
   color: #292929;
 }
@@ -165,8 +156,8 @@
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
     text-align: left;
     color: #292929;
   }
@@ -175,8 +166,8 @@
     font-family: 'Impact';
     font-size: 32px;
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 1.5px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
     text-align: left;
     color: #292929;
   }
@@ -200,10 +191,7 @@
     justify-content: space-between;
     gap: 40px;
     align-items: flex-start;
-    /* width: 305px;
-    height: 24px; */
     padding-left: 0;
-    /* padding-top: 2px; */
   }
 }
 @media screen and (min-width: 1280px) {
@@ -216,18 +204,13 @@
     height: 152px;
     padding: 64px;
   }
-  /* .mobile-menu-open {
-    display: none;
-  }
-  .mobile-menu {
-    display: none;
-  } */
+
   .menu-link {
     font-family: 'Poppins';
     font-size: 16px;
+    font-style: normal;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    line-height: 1.5;
     text-align: left;
     color: #292929;
   }
@@ -259,9 +242,6 @@
   .menu {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    /* width: 305px;
-    height: 24px; */
     padding-left: 0;
     padding-top: 2px;
   }
