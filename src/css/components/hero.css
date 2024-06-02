@@ -1,5 +1,5 @@
 .section-title {
-  background-image: url('./img/hero/decor1x-min.png');
+  background-image: url('/img/hero/decor1x-min.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,7 +11,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .section-title {
-    background-image: url('./img/hero/decor2x-min.png');
+    background-image: url('/img/hero/decor2x-min.png');
   }
 }
 .page-title {
@@ -116,13 +116,13 @@
 
 @media screen and (min-width: 768px) {
   .section-title {
-    background-image: url('./img/hero/decor1x-tab-min.png');
+    background-image: url('/img/hero/decor1x-tab-min.png');
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .section-title {
-      background-image: url('./img/hero/decor2x-tab-min.png');
+      background-image: url('/img/hero/decor2x-tab-min.png');
     }
   }
   .page-title {
@@ -170,13 +170,13 @@
 }
 @media screen and (min-width: 1280px) {
   .section-title {
-    background-image: url('./img/hero/decor1x.png');
+    background-image: url('/img/hero/decor1x.png');
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .section-title {
-      background-image: url('./img/hero/decor2x.png');
+      background-image: url('/img/hero/decor2x.png');
     }
   }
   .page-title {
