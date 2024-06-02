@@ -28,20 +28,3 @@ export const fetchDataAndInitializeSwiper = async () => {
 } 
  
 
-
-
-const fetchReviews = async () => {
-  try {
-    const response = await axios.get(
-      'https://portfolio-js.b.goit.study/api/reviews'
-    );
-
-    if (response.status !== 200) {
-      throw new Error(response.status);
-    }
-
-    return response.data;
-  } catch (error) {
-    throw new Error(`Fetching reviews failed: ${error.message}`);
-  }
-};

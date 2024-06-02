@@ -1,8 +1,4 @@
 .about-me h2 {
-  font-family: Impact;
-  font-size: 52px;
-  letter-spacing: 0.03em;
-  line-height: 64px;
   color: #292929;
   margin-bottom: 40px;
 }
@@ -22,17 +18,13 @@
 }
 
 .bio h3 {
-  font-family: Poppins;
-  font-size: 32px;
-  letter-spacing: 0.0001em;
-  line-height: 1.5;
   margin-bottom: 32px;
 }
 
 .bio p {
   margin-bottom: 10px;
   color: #292929;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.5;
@@ -42,45 +34,10 @@
   margin-bottom: 40px;
 }
 
-.education h3 {
-  font-family: Poppins;
+.about-subtitle {
+  font-family: 'Poppins';
   font-size: 32px;
-  letter-spacing: 0.0001em;
-  line-height: 1.5;
-  margin-bottom: 32px;
-}
-
-.educ-element {
-  color: #292929;
-  font-family: Poppins;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
-  list-style-type: disc;
-}
-
-.educ-element::marker {
-  color: #00b068;
-}
-
-.educ-element:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.education {
-  margin-bottom: 40px;
-}
-
-.education-role {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
-}
-
-.role h3 {
-  font-family: Poppins;
-  font-size: 32px;
-  letter-spacing: 0.0001em;
+  letter-spacing: 0.02em;
   line-height: 1.5;
   margin-bottom: 32px;
 }
@@ -98,15 +55,33 @@
   display: none;
 }
 
-.education-role {
-  margin-bottom: 80px;
-}
-
 @media (min-width: 768px) {
   .about-me h2 {
     font-size: 108px;
     letter-spacing: 0.02em;
     line-height: 1.15;
+  }
+  .about-me {
+    background-image: url('/img/about-me/bac-t-1x.png');
+    background-repeat: no-repeat;
+    background-position: right bottom 156px;
+  }
+
+  .about-education-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .about-education-list-item {
+    width: 50%;
+  }
+
+  .about-education-list-item:first-child {
+    margin-bottom: unset;
+  }
+
+  .about-education-sublist-item:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   .content {
@@ -150,47 +125,28 @@
   .about {
     margin-bottom: 24px;
   }
-
-  .education h3 {
-    font-size: 36px;
-    letter-spacing: 0.005em;
-    line-height: 1.5;
-  }
-
-  .role h3 {
-    font-size: 36px;
-    letter-spacing: 0.005em;
-    line-height: 1.5;
-  }
-
-  .education-role {
-    flex-direction: row;
-    gap: 32px;
-  }
-
-  .education {
-    max-width: 55%;
-  }
-
-  .educ-element {
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    line-height: 1.5;
-  }
 }
 
 @media (min-width: 1280px) {
-  .content {
-    background-image: url('./img/about-me/bac-d-1x.png');
-    background-repeat: no-repeat;
-    background-position: right bottom 264px;
-  }
   .about-me h2 {
     text-align: start;
   }
-  .education {
-    width: 50%;
+  .about-me {
+    background-image: url('/img/about-me/bac-d-1x.png');
+    background-repeat: no-repeat;
+    background-position: right 60px bottom 200px;
   }
+  .about-education {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 104px;
+  }
+
+  .about-education-list {
+    gap: 136px;
+    max-width: 904px;
+  }
+
   .content {
     justify-content: center;
     margin-bottom: 80px;
@@ -213,49 +169,40 @@
     width: 384px;
     height: 288px;
   }
+}
 
-  /* .education-role {
-    justify-content: center;
-    gap: 136px;
-  } */
+.about-education-list-item:first-child {
+  margin-bottom: 40px;
+}
 
-  /* .education {
-    max-width: 40%;
-  } */
-  .education-role {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 136px;
-  }
-  .educ-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  .role-item {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-  }
+.about-education-sublist {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
 
-  .education-role {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 136px;
-  }
+.about-education-sublist-item {
+  position: relative;
+  padding-left: 32px;
+}
 
-  .educ-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
+.about-education-sublist-item {
+  color: #292929;
+  font-family: 'Poppins';
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+.about-education-sublist-item::marker {
+  color: #00b068;
+}
 
-  .role-item {
-    display: flex;
-    flex-direction: column;
-  }
+.about-education-sublist-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
 }

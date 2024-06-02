@@ -1,6 +1,6 @@
 //<<<<<<< HEAD
-import { initReviewsSection } from './js/reviews.js';
-initReviewsSection();
+import { initializeSwiper } from './js/reviews.js';
+initializeSwiper();
 //=======
 
 //<<<<<<< HEAD
@@ -17,7 +17,6 @@ import { showProjects } from './js/my-projects';
 showProjects();
 //=======
 //=======
-initReviewsSection();
 
 import { initAccardionFaq } from './js/faq.js';
 
