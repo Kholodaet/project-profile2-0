@@ -4,6 +4,12 @@ initializeSwiper();
 //=======
 
 //<<<<<<< HEAD
+
+//>>>>>>> header
+import { toggleMenu } from './js/header.js';
+toggleMenu();
+//>>>>>>> header
+
 //>>>>>>> main
 
 //<<<<<<< My-project
