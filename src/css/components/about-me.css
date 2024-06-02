@@ -65,6 +65,7 @@
     background-image: url('/img/about-me/bac-t-1x.png');
     background-repeat: no-repeat;
     background-position: right bottom 156px;
+    padding-top: 124px;
   }
 
   .about-education-list {
@@ -128,6 +129,9 @@
 }
 
 @media (min-width: 1280px) {
+  .about-me {
+    padding-top: 164px;
+  }
   .about-me h2 {
     text-align: start;
   }
@@ -202,7 +206,4 @@
 
 .about-education-sublist-item:not(:last-child) {
   margin-bottom: 12px;
-}
-
-@media screen and (min-width: 768px) {
 }
