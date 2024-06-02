@@ -54,6 +54,3 @@ export const initializeSwiper = async () => {
   }
 };
 
-export function initReviewsSection() {
-  initializeSwiper();
-}
