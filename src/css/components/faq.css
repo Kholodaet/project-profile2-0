@@ -146,7 +146,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .faq {
     padding-top: 82px;
     padding-bottom: 82px;
@@ -159,9 +159,17 @@
   .desktop-faq-bg-wrap {
     min-width: 526px;
   }
-
+  .desktop-faq-bg-wrap {
+    background-image: url(/img/faq/decor-bg4.png);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 240px;
+  }
   .faq-header {
-    margin-bottom: 240px;
+    /* margin-bottom: 240px; */
+    /* margin-bottom: 0; */
+    /* background-image: url(/img/faq/decor-bg4.png);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 240px; */
   }
 
   .faq-bg-img {
@@ -172,4 +180,11 @@
     max-width: 592px;
     margin-top: 276px;
   }
+  /* @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .desktop-faq-bg-wrap {
+      background-image: url(/img/faq/decor-bg4-2x.png);
+    }
+  } */
 }

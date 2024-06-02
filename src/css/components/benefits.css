@@ -29,7 +29,7 @@ padding-right: 20px; */
 }
 
 .section-benefits-title-part {
-  color: #00c292;
+  color: #00b068;
 }
 
 .section-benefits-list {
@@ -198,5 +198,13 @@ padding-right: 20px; */
   .section-benefits-text {
     letter-spacing: 0.03em;
     width: 384px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-title {
+    background-image: url('/img/benefits/decor-bg-2x.png');
   }
 }
