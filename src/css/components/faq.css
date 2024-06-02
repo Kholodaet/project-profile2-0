@@ -1,17 +1,12 @@
-.faq {
+/* .faq {
   padding-top: 40px;
   padding-bottom: 40px;
-}
+} */
 .desktop-faq-bg-wrap {
   max-width: 320px;
 }
 
 .faq-header {
-  /* font-family: Impact, sans-serif;
-  font-size: 52px;
-  line-height: 1.23;
-  letter-spacing: 0.03em;
-  text-transform: uppercase; */
   margin-bottom: 40px;
 }
 .faq-span {
@@ -119,8 +114,8 @@
 
 @media screen and (min-width: 768px) {
   .faq {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    /* padding-top: 128px; */
+    /* padding-bottom: 62px; */
   }
 
   .faq-header {
@@ -147,10 +142,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .faq {
+  /* .faq {
     padding-top: 82px;
     padding-bottom: 82px;
-  }
+  } */
   .faq-container {
     display: flex;
     justify-content: space-between;
@@ -163,13 +158,6 @@
     background-image: url(/img/faq/decor-bg4.png);
     background-repeat: no-repeat;
     background-position: left 0px bottom 240px;
-  }
-  .faq-header {
-    /* margin-bottom: 240px; */
-    /* margin-bottom: 0; */
-    /* background-image: url(/img/faq/decor-bg4.png);
-    background-repeat: no-repeat;
-    background-position: left 0px bottom 240px; */
   }
 
   .faq-bg-img {
