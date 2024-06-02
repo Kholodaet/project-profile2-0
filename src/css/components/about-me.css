@@ -6,6 +6,9 @@
   color: #292929;
   margin-bottom: 40px;
 }
+.about-me {
+  padding-top: 80px;
+}
 
 .about-me h2 span {
   color: #00b068;
@@ -176,11 +179,18 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
+  .content {
+    background-image: url('./img/about-me/bac-d-1x.png');
+    background-repeat: no-repeat;
+    background-position: right bottom 264px;
+  }
   .about-me h2 {
     text-align: start;
   }
-
+  .education {
+    width: 50%;
+  }
   .content {
     justify-content: center;
     margin-bottom: 80px;
