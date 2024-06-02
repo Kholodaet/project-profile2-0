@@ -1,6 +1,6 @@
 //<<<<<<< HEAD
-import { initReviewsSection } from './js/reviews.js';
-initReviewsSection();
+import { initializeSwiper } from './js/reviews.js';
+initializeSwiper();
 //=======
 
 //<<<<<<< HEAD

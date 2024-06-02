@@ -26,6 +26,11 @@ export const initializeSwiper = async () => {
 
     const swiper3 = new Swiper('#swiper3', {
       direction: 'horizontal',
+      autoHeight: true,
+      scrollbar: {
+       el: '.swiper-scrollbar',
+       draggable: true,
+      },
       keyboard: {
         enabled: true,
         onlyInViewport: false,
@@ -33,11 +38,11 @@ export const initializeSwiper = async () => {
       breakpoints: {
         768: {
           slidesPerView: 1,
-          spaceBetween: 16,
+          spaceBetween: 10,
         },
         1280: {
           slidesPerView: 2,
-          spaceBetween: 18,
+          spaceBetween: 32,
         },
       },
       navigation: {
@@ -54,6 +59,3 @@ export const initializeSwiper = async () => {
   }
 };
 
-export function initReviewsSection() {
-  initializeSwiper();
-}
