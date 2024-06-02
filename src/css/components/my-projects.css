@@ -15,12 +15,6 @@
 }
 
 .text-projects {
-  /* font-family: 'Impact', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 1.23;
-  letter-spacing: 0.03em;
-  text-transform: uppercase; */
   color: #292929;
   text-align: center;
   margin-bottom: 40px;
@@ -53,10 +47,6 @@
 }
 
 .portfolio-title {
-  /* font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.25; */
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;

@@ -10,13 +10,8 @@
 }
 
 .section-benefits-title {
-  font-family: 'Impact';
-  font-size: 52px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-weight: 400;
   text-transform: uppercase;
-  color: black;
+  color: #292929;
   margin-bottom: 40px;
 }
 
@@ -39,22 +34,14 @@
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  letter-spacing: 0.0001em;
+  letter-spacing: 0.01em;
   font-weight: 400;
   text-transform: uppercase;
-  color: black;
+  color: #292929;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.section-benefits-text {
-  font-family: 'Poppins';
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.007em;
-  color: black;
-}
 .icon-section-benefits {
   display: flex;
   justify-content: center;

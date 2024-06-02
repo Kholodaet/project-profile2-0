@@ -92,12 +92,6 @@
   stroke: currentColor;
   width: 12px;
 }
-/* .ac-text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-} */
 
 .ac.is-active {
   background: rgba(0, 176, 104, 0.2);
@@ -137,10 +131,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* .faq {
-    padding-top: 82px;
-    padding-bottom: 82px;
-  } */
   .faq-container {
     display: flex;
     justify-content: space-between;
@@ -163,11 +153,4 @@
     max-width: 592px;
     margin-top: 276px;
   }
-  /* @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    .desktop-faq-bg-wrap {
-      background-image: url(/img/faq/decor-bg4-2x.png);
-    }
-  } */
 }
