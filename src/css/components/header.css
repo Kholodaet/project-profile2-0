@@ -1,0 +1,251 @@
+.container-header {
+  height: 64px;
+}
+
+.logo-first-name {
+  font-family: 'Impact';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #292929;
+}
+.logo-second-name {
+  font-family: 'Impact';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #00b068;
+}
+.menu {
+  display: none;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+.mobile-menu-open {
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  stroke: #2e2f42;
+  padding: 0;
+  line-height: 0;
+
+}
+/* ========= Mobile-menu ========= */
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.logo-first {
+  font-family: 'Impact';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #292929;
+}
+.logo-second {
+  font-family: 'Impact';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #00b068;
+}
+.mobile-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center; 
+  padding: 20px 0;
+ } 
+.back-img {
+  max-width: 100%;
+  background-image: url(../../img/hero/decor1x-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-close-btn {
+  cursor: pointer;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: #00b068;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-list {
+  min-width: 82px;
+  height: 120px;
+  text-align: center;
+  padding-left: 0;
+}
+.container-menu-mobile-list {
+  min-width: 320px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.mobile-link {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #292929;
+}
+.mobile-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-header {
+    min-width: 768px;
+    height: 96px;
+  }
+  .container-modal {
+    width: 364px;
+    height: 152px;
+    padding: 64px;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-link {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #292929;
+  }
+
+  .logo-first-name {
+    font-family: 'Impact';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #292929;
+  }
+  .logo-second-name {
+    font-family: 'Impact';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #00b068;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 305px;
+    height: 24px;
+    padding-left: 0;
+    padding-top: 2px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-header {
+    min-width: 1216px;
+    height: 96px;
+  }
+  .container-modal {
+    width: 364px;
+    height: 152px;
+    padding: 64px;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .menu-link {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #292929;
+  }
+
+  .logo-first-name {
+    font-family: 'Impact';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #292929;
+  }
+  .logo-second-name {
+    font-family: 'Impact';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #00b068;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 305px;
+    height: 24px;
+    padding-left: 0;
+    padding-top: 2px;
+  }
+}
