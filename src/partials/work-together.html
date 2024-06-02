@@ -1,77 +1,88 @@
-<section class="contacts" id="work">
-  <img
-    class="fon-work-together"
-    src="./img/work-together/decor-bg-3.png"
-    alt="fon"
-  />
-  <h2 class="contacts-header">
-    LET’S <span class="contacts-header-span">WORK TOGETHER</span>
-  </h2>
-  <div class="contacts-dekstop-container">
-    <div class="contacts-dekstop-container-smallbox">
-      <p class="contacts-text">
-        Contact me to transform your ideas into exceptional solutions.
-      </p>
-      <ul class="contacts-list">
-        <li class="contacts-list-item">
-          <div class="contacts-list-container">
+<section class="work-together-section" id="work">
+  <div></div>
+  <div class="container container-work-together">
+    <h2 class="work-together-title">
+      let’s <span class="span-green">work together</span>
+    </h2>
+    <div class="work-together-container-desktop">
+      <div class="work-together-container-desktop-text">
+        <p class="work-together-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <address class="work-together-address">
+          <a
+            class="work-together-link work-together-link-tel"
+            href="tel:+380904567890"
+          >
             <svg class="contacts-list-link-icon">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
-            <a href="tel:+38 090 456 78 90" class="contacts-list-link"
-              >+38 090 456 78 90</a
-            >
-          </div>
-        </li>
-        <li class="contacts-list-item">
-          <div class="contacts-list-container">
+            +38 090 456 78 90</a
+          >
+          <a
+            class="work-together-link work-together-link-mail"
+            href="mailto:lloydjefferson@gmail.com"
+          >
             <svg class="contacts-list-link-icon">
               <use href="./img/symbol-defs.svg#icon-message"></use>
             </svg>
-            <a href="mailto:lloydjefferson@gmail.com" class="contacts-list-link"
-              >lloydjefferson@gmail.com</a
-            >
-          </div>
-        </li>
-        <li class="contacts-list-item">
-          <div class="contacts-list-container">
+            lloydjefferson@gmail.com</a
+          >
+          <a
+            class="work-together-link work-together-link-geo"
+            href="#"
+            target="_blank"
+          >
             <svg class="contacts-list-link-icon">
               <use href="./img/symbol-defs.svg#icon-location"></use>
             </svg>
-            <a
-              href="https://www.google.com/maps/place/USA,+New+York"
-              class="contacts-list-link"
-            >
-              USA, New York</a
-            >
-          </div>
-        </li>
-      </ul>
-    </div>
-    <form class="contacts-form" name="reviews">
-      <label class="contacts-label"
-        ><input
-          class="contacts-input footer-email-input"
-          name="email"
-          spellcheck="false"
-          autocomplete="off"
-          placeholder="Your email*"
-          type="text"
-        />
-        <div class="footer-label success-label visually-hidden">Success!</div>
-        <div class="footer-label error-label visually-hidden">
-          Invalid email, try again!
+            USA, New York</a
+          >
+        </address>
+      </div>
+      <form action="" class="work-together-form">
+        <div class="work-together-container-input">
+          <input
+            class="work-together-input work-together-input-email"
+            type="text"
+            placeholder="Your-email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <svg
+            class="work-together-address-icon-form hidden"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icon.svg#work-together-check-icon"></use>
+          </svg>
         </div>
-      </label>
-      <label class="contacts-label">
-      <textarea
-          class="contacts-input footer-comments-input"
-          name="Message"
+
+        <textarea
+          class="work-together-input work-together-input-message"
+          name=""
+          id=""
           placeholder="Message"
-          minlength="10" 
-          ></textarea>
-      </label>
-      <button type="submit" class="contacts-button">SEND MESSAGE</button>
-    </form>
+        ></textarea>
+        <p class="work-together-error-message">error</p>
+        <button class="work-together-btn" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
   </div>
 </section>
+
+<div class="work-together-backdrop">
+  <div class="work-together-modal">
+    <button class="work-together-modal-btn-closing" type="button">
+      <svg class="work-together-modal-btn-icin" width="24" height="24">
+        <use href="img/icon.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="work-together-modal-main">
+      Thank you for your interest in cooperation!
+    </h3>
+    <p class="work-together-modal-second">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>

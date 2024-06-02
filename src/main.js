@@ -22,3 +22,6 @@ import { initAccardionFaq } from './js/faq.js';
 
 initAccardionFaq();
 //>>>>>>> main
+
+import { manageModal } from './js/work-together.js';
+manageModal();

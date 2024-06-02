@@ -5,6 +5,9 @@
   font-weight: 400;
   color: #292929;
   background-color: #f0f0f0;
+  --fs-title-tabl: 108px;
+  --flh-title-tabl: 1.15;
+  --fls-tittle-mob: 0.02em;
 }
 html,
 body,
