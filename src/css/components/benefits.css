@@ -164,21 +164,12 @@
     width: 384px;
   }
 }
-/* 
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
-  .section-benefits {
-    background-image: url('/img/hero/decor2x-min.png');
-    width: 100%;
-  }
-} */
-
-/* @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+/* retina */
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .section-benefits {
-    background-image: url('/img/hero/decor2x-min.png');
+    background-image: url('/img/benefits/smt-2x.png');
     width: 100%;
   }
-} */
+}

@@ -303,3 +303,12 @@
     background: #00b068;
   }
 }
+/* retina */
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .work-together-section {
+    background-image: url('/img/benefits/smt-2x.png');
+    width: 100%;
+  }
+}

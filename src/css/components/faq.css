@@ -136,10 +136,11 @@
     min-width: 526px;
   }
   .desktop-faq-bg-wrap {
-    background-image: url(/img/faq/decor-bg4.png);
+    background-image: url('/img/faq/decor-bg4.png');
     background-repeat: no-repeat;
     background-position: left 0px bottom 0px;
   }
+  /* retina */
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
