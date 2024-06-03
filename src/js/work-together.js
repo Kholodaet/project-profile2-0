@@ -13,7 +13,7 @@ export function manageModal() {
   const workTogetherErrorMessage = document.querySelector(
     '.work-together-error-message'
   );
-  const workTogetherEmailCkeckIcon = document.querySelector(
+  const workTogetherEmailCheckIcon = document.querySelector(
     '.work-together-address-icon-form'
   );
   const workTogetherInputMessage = document.querySelector(
@@ -34,7 +34,7 @@ export function manageModal() {
           workTogetherInputEmail.value.trim()
         ) === true
       ) {
-        workTogetherEmailCkeckIcon.classList.remove('hidden');
+        workTogetherEmailCheckIcon.classList.remove('hidden');
         workTogetherInputEmail.style.color = 'black';
         postToAdd.email = workTogetherInputEmail.value;
         postToAdd.comment = workTogetherInputMessage.value;
@@ -58,7 +58,7 @@ export function manageModal() {
           .then(post => {
             console.log(post);
             workTogetherModal.classList.add('active');
-            workTogetherEmailCkeckIcon.classList.remove('hidden');
+            workTogetherEmailCheckIcon.classList.remove('hidden');
           })
           .catch(error => {
             iziToast.info({
@@ -84,7 +84,7 @@ export function manageModal() {
   workTogetherModalButton.addEventListener('click', () => {
     workTogetherModal.classList.remove('active');
     workTogetherInputEmail.value = '';
-    workTogetherEmailCkeckIcon.classList.add('hidden');
+    workTogetherEmailCheckIcon.classList.add('hidden');
     workTogetherInputMessage.value = '';
   });
 
@@ -95,7 +95,7 @@ export function manageModal() {
     ) {
       workTogetherModal.classList.remove('active');
       workTogetherInputEmail.value = '';
-      workTogetherEmailCkeckIcon.classList.add('hidden');
+      workTogetherEmailCheckIcon.classList.add('hidden');
       workTogetherInputMessage.value = '';
     }
   });
@@ -104,7 +104,7 @@ export function manageModal() {
     if (event.key === 'Escape') {
       workTogetherModal.classList.remove('active');
       workTogetherInputEmail.value = '';
-      workTogetherEmailCkeckIcon.classList.add('hidden');
+      workTogetherEmailCheckIcon.classList.add('hidden');
       workTogetherInputMessage.value = '';
     }
   });
