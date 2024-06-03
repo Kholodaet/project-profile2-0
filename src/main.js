@@ -25,3 +25,7 @@ initAccardionFaq();
 
 import { manageModal } from './js/work-together.js';
 manageModal();
+
+// scroll
+
+import './js/scroll-btn.js';

@@ -103,3 +103,56 @@
     margin-bottom: 44px;
   }
 }
+
+.scroll-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  transform: scale(0);
+  visibility: hidden;
+  z-index: 99999;
+  opacity: 0;
+  transition: all 0.3s #00b068;
+}
+
+.scroll-btn:focus,
+.scroll-btn:hover {
+  background-color: #00b068;
+}
+
+.scroll-btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #292929;
+  opacity: 0.6;
+}
+
+.is-active-scroll {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-btn.is-active-scroll {
+  display: block;
+  /* Інші стилі для активної кнопки */
+}
+
+.scroll-btn.rocket-launch {
+  animation: rocket-animation 1s forwards;
+}
+
+@keyframes rocket-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px); /* Коригуйте значення для бажаного ефекту */
+  }
+}
