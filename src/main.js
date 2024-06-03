@@ -8,6 +8,8 @@ initializeSwiper();
 //>>>>>>> header
 import { toggleMenu } from './js/header.js';
 toggleMenu();
+import { closeMenuOnClick } from './js/header.js';
+closeMenuOnClick();
 //>>>>>>> header
 
 //>>>>>>> main
