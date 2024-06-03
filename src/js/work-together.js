@@ -24,65 +24,69 @@ export function manageModal() {
   workTogetherForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    if (
-      workTogetherInputEmail.value.trim() !== '' &&
-      workTogetherInputEmail.value.trim() !== ' '
-    ) {
-      workTogetherErrorMessage.classList.remove('active');
-      if (
-        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
-          workTogetherInputEmail.value.trim()
-        ) === true
-      ) {
-        workTogetherEmailCheckIcon.classList.remove('hidden');
-        workTogetherInputEmail.style.color = 'black';
-        postToAdd.email = workTogetherInputEmail.value;
-        postToAdd.comment = workTogetherInputMessage.value;
-        console.log(postToAdd);
+    const emailValue = workTogetherInputEmail.value.trim();
+    const messageValue = workTogetherInputMessage.value.trim();
 
-        const options = {
-          method: 'POST',
-          body: JSON.stringify(postToAdd),
-          headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
-          },
-        };
-
-        fetch('https://portfolio-js.b.goit.study/api/requests', options)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(response.status);
-            }
-            return response.json();
-          })
-          .then(post => {
-            console.log(post);
-            workTogetherModal.classList.add('active');
-            workTogetherEmailCheckIcon.classList.remove('hidden');
-          })
-          .catch(error => {
-            iziToast.info({
-              title: 'Info',
-              message:
-                'Sorry, something went wromg, please check your request once more.',
-              position: 'topRight',
-            });
-            console.log(error);
-          });
-      } else {
-        workTogetherErrorMessage.innerHTML =
-          'Olease input correct Email adress';
-        workTogetherInputEmail.style.color = 'red';
-        workTogetherErrorMessage.classList.add('active');
-      }
-    } else {
-      workTogetherErrorMessage.innerHTML = 'Email cannnot be blank';
+    if (emailValue === '' || emailValue === ' ') {
+      workTogetherErrorMessage.innerHTML = 'Email cannot be blank';
       workTogetherErrorMessage.classList.add('active');
+      return;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
+      workTogetherErrorMessage.innerHTML = 'Please input correct Email address';
+      workTogetherInputEmail.style.color = 'red';
+      workTogetherErrorMessage.classList.add('active');
+      return;
+    } else if (messageValue === '') {
+      iziToast.error({
+        title: 'Error',
+        message: 'Message cannot be empty',
+        position: 'topRight',
+      });
+      return;
     }
+
+    workTogetherErrorMessage.classList.remove('active');
+    workTogetherEmailCheckIcon.classList.remove('hidden');
+    workTogetherInputEmail.style.color = 'black';
+
+    postToAdd.email = emailValue;
+    postToAdd.comment = messageValue;
+
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(postToAdd),
+      headers: {
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+    };
+
+    fetch('https://portfolio-js.b.goit.study/api/requests', options)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(response.status);
+        }
+        return response.json();
+      })
+      .then(post => {
+        console.log(post);
+        workTogetherModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        workTogetherEmailCheckIcon.classList.remove('hidden');
+      })
+      .catch(error => {
+        iziToast.info({
+          title: 'Info',
+          message:
+            'Sorry, something went wrong, please check your request once more.',
+          position: 'topRight',
+        });
+        console.log(error);
+      });
   });
 
   workTogetherModalButton.addEventListener('click', () => {
     workTogetherModal.classList.remove('active');
+    document.body.style.overflow = '';
     workTogetherInputEmail.value = '';
     workTogetherEmailCheckIcon.classList.add('hidden');
     workTogetherInputMessage.value = '';
@@ -94,6 +98,7 @@ export function manageModal() {
       event.target.classList.value !== 'work-together-modal'
     ) {
       workTogetherModal.classList.remove('active');
+      document.body.style.overflow = '';
       workTogetherInputEmail.value = '';
       workTogetherEmailCheckIcon.classList.add('hidden');
       workTogetherInputMessage.value = '';
@@ -103,6 +108,7 @@ export function manageModal() {
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
       workTogetherModal.classList.remove('active');
+      document.body.style.overflow = '';
       workTogetherInputEmail.value = '';
       workTogetherEmailCheckIcon.classList.add('hidden');
       workTogetherInputMessage.value = '';
