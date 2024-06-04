@@ -135,8 +135,8 @@
   cursor: pointer;
 }
 
-.btn-custom-next:focus,
-.btn-custom-prev:focus,
+.btn-custom-next:active,
+.btn-custom-prev:active,
 .btn-custom-next:hover,
 .btn-custom-prev:hover {
   background-color: #e4e5e6;
@@ -183,4 +183,11 @@
 }
 .dark-theme .swiper-button-disabled svg {
   stroke: #2a2d32;
+}
+
+.dark-theme .btn-custom-next:active,
+.dark-theme .btn-custom-next:hover,
+.dark-theme .btn-custom-prev:active,
+.dark-theme .btn-custom-prev:hover {
+  background-color:  #3b3f45;
 }
