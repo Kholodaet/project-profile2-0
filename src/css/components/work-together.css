@@ -45,6 +45,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.work-together-link:hover,
+.work-together-link:active {
+color: #00b068;
+}
+
 .work-together-container-input {
   position: relative;
   margin-bottom: 32px;
@@ -131,6 +136,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-together-btn:hover,
+.work-together-btn:active{
+  background:  #009156;
 }
 
 .work-together-picture {
@@ -315,7 +325,10 @@
 .dark-theme .work-together-link {
   color: #f0f0f0;
 }
-
+.dark-theme .work-together-link:hover,
+.dark-theme .work-together-link:active {
+color: #00b068;
+}
 .dark-theme .work-together-input {
   background: #2a2d32;
 }
@@ -341,4 +354,13 @@
 }
 .dark-theme .work-together-input {
   color: #e4e5e6;
+}
+
+.dark-theme .work-together-btn {
+background-color: #14c57c;;
+}
+
+.dark-theme .work-together-btn:hover,
+.dark-theme .work-together-btn:active{
+background-color:  #009156;
 }

@@ -89,7 +89,7 @@
   background-size: cover;
 } */
 .back-img {
-  max-width: 100%;
+  /* max-width: 100%; */
   background-image: url(/img/mobile/mob.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -139,6 +139,11 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: #292929;
+}
+
+.mobile-link:hover,
+.mobile-link:active {
+color:#00b068
 }
 .mobile-item:not(:last-child) {
   margin-bottom: 24px;
@@ -328,6 +333,11 @@
 
 .dark-theme .mobile-link {
   color: #f0f0f0;
+}
+
+.dark-theme .mobile-link:hover,
+.dark-theme .mobile-link:active {
+color:#00b068;
 }
 
 .dark-theme .logo-first {

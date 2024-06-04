@@ -165,3 +165,8 @@
  .dark-theme.contered-color {
    color: #FFFFFF;
  }
+
+ .dark-theme .social-media-link:hover,
+.dark-theme .social-media-link:active {
+color:  #14c57c;
+}

@@ -70,8 +70,8 @@
 .page-btn-link:focus + .btn-link,
 .page-btn-link:active + .btn-link,
 .page-btn-link:hover + .btn-link {
-  background-color: #00b068;
-}
+  background-color: rgba(0, 176, 104, 0.6);
+  }
 
 .btn-icon {
   fill: #00b068;
@@ -224,6 +224,21 @@
 .dark-theme .page-link{
   color: #F0F0F0;
 }
+
+.dark-theme .page-item-link:hover,
+.dark-theme .page-link:hover{
+  color: #00b068;
+}
 .dark-theme .page-item-link{
   background-color: #2A2D32;
 }
+
+.dark-theme .btn-link {
+    background-color: rgba(20, 197, 124, 0.2);
+ 
+}
+.dark-theme .page-btn-link:focus + .btn-link,
+.dark-theme .page-btn-link:active + .btn-link,
+.dark-theme .page-btn-link:hover + .btn-link {
+  background-color: rgba(20, 197, 124, 0.6);;
+  }
