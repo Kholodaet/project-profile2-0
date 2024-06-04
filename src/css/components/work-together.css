@@ -311,16 +311,34 @@
   }
 }
 
-
 .dark-theme .work-together-text,
 .dark-theme .work-together-link {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .dark-theme .work-together-input {
   background: #2a2d32;
 }
 
-.dark-theme .work-together-input::placeholder{
-color: rgba(240, 240, 240, 0.4);
+.dark-theme .work-together-input::placeholder {
+  color: rgba(240, 240, 240, 0.4);
+}
+
+.dark-theme .work-together-modal {
+  background: #2a2d32;
+}
+
+.dark-theme .work-together-modal-second {
+  color: #e4e5e6;
+}
+
+.dark-theme .work-together-modal-btn-closing {
+  stroke: #e4e5e6;
+}
+
+.dark-theme .work-together-input-email {
+  color: #e4e5e6;
+}
+.dark-theme .work-together-input {
+  color: #e4e5e6;
 }
