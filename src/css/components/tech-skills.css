@@ -3,7 +3,6 @@
 }
 
 .marquee {
-  /* position: relative; */
   overflow: hidden;
   font-family: 'Poppins';
   font-size: 32px;
@@ -14,10 +13,10 @@
   transform: rotate(2deg);
   transform-origin: 2em 0em;
   padding: 32px 0px;
-  z-index: -2;
 }
 
 .marquee-another {
+  position: relative;
   overflow: hidden;
   font-family: 'Poppins';
   font-size: 32px;
@@ -27,7 +26,7 @@
   background: #bcdfd1;
   margin-top: 60px;
   padding: 32px 0px;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .marquee-inner {
