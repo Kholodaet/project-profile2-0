@@ -164,7 +164,7 @@
   .reviews-container {
     max-width: 1280px;
   }
-  .reviews-title{
+  .reviews-title {
     font-size: 108px;
   }
 }
@@ -174,6 +174,13 @@
   color: #f0f0f0;
 }
 
-.dark-theme .review-card{
+.dark-theme .review-card {
   background-color: #2a2d32;
+}
+
+.dark-theme .reviews-arrow {
+  stroke: #e4e5e6;
+}
+.dark-theme .swiper-button-disabled svg {
+  stroke: #2a2d32;
 }

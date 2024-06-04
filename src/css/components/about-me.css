@@ -10,7 +10,7 @@
 }
 
 .foto {
-  border-radius: 10px;
+  border-radius: 20px;
   width: 320px;
   height: 374px;
   margin-bottom: 40px;
@@ -217,5 +217,5 @@
 
 .dark-theme .about,
 .dark-theme .about-two {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }

@@ -12,7 +12,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-align: left;
-  
+  color: #292929;
 }
 .logo-second-name {
   font-family: 'Impact';
@@ -65,6 +65,7 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.06em;
+  color: #292929;
 }
 .logo-second {
   font-family: 'Impact';
@@ -80,20 +81,28 @@
   height: 64px;
   align-items: center;
 }
-.back-img {
+/* .back-img {
   max-width: 100%;
   background-image: url(/img/mobile/bgi-mob.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+} */
+.back-img {
+  max-width: 100%;
+  background-image: url(/img/mobile/mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2),
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .burger-menu {
     background-image: url(/img/mobile/bgi-mob-2x.webp);
   }
-}
+} */
 
 .mobile-close-btn {
   cursor: pointer;
@@ -129,6 +138,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: left;
+  color: #292929;
 }
 .mobile-item:not(:last-child) {
   margin-bottom: 24px;
@@ -158,6 +168,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: left;
+    color: #292929;
   }
 
   .logo-first-name {
@@ -220,6 +231,7 @@
     line-height: 32px;
     letter-spacing: 1.5px;
     text-align: left;
+    color: #292929;
   }
   .logo-second-name {
     font-family: 'Impact';
@@ -251,7 +263,7 @@
   appearance: none;
   width: 6.25em;
   height: 3.125em;
-  background: linear-gradient(to right, #E4E5E6 50%, #E4E5E6 50%) no-repeat;
+  background: linear-gradient(to right, #e4e5e6 50%, #e4e5e6 50%) no-repeat;
   background-size: 205%;
   background-position: 0;
   -webkit-transition: 0.4s;
@@ -264,13 +276,13 @@
 }
 
 .theme-checkbox::before {
-  content: "";
+  content: '';
   width: 2.25em;
   height: 2.25em;
   position: absolute;
   top: 0.438em;
   left: 0.438em;
-  background: linear-gradient(to right, #00B068 50%, #00B068 50%) no-repeat;
+  background: linear-gradient(to right, #00b068 50%, #00b068 50%) no-repeat;
   background-size: 205%;
   background-position: 100%;
   border-radius: 50%;
@@ -291,11 +303,35 @@
 }
 
 .dark-theme {
-  color: #F0F0F0;
+  color: #f0f0f0;
   background-color: #1e2023;
 }
 
 .dark-theme .logo-first-name,
-.dark-theme .menu-link{
-  color: #F0F0F0;
+.dark-theme .menu-link {
+  color: #f0f0f0;
+}
+
+.dark-theme .mobile-menu {
+  background-color: #1e2023;
+}
+
+.dark-theme .mobile-close-btn {
+  stroke: #f0f0f0;
+}
+
+.dark-theme .btn-close-icon {
+  stroke: #f0f0f0;
+}
+
+.dark-theme .mobile-link {
+  color: #f0f0f0;
+}
+
+.dark-theme .logo-first {
+  color: #f0f0f0;
+}
+
+.dark-theme .mobile-menu-open {
+  stroke: #e4e5e6;
 }
