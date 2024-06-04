@@ -32,6 +32,9 @@
 .marquee-inner {
   display: flex;
 }
+.marquee-inner-h {
+  display: flex;
+}
 
 .marquee-line {
   flex-shrink: 0;
@@ -101,14 +104,13 @@
 }
 
 .dark-theme .marquee-line {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 .dark-theme .marquee-another {
   padding: 0;
 }
 .dark-theme .marquee-line {
   background: #204136;
-  
 }
 
 .dark-theme .marquee {
