@@ -228,7 +228,10 @@ color:#00b068
     text-align: left;
     color: #292929;
   }
-
+.menu-link:hover,
+.menu-link:active{
+color:#00b068;
+}
   .logo-first-name {
     font-family: 'Impact';
     font-size: 32px;
@@ -347,4 +350,9 @@ color:#00b068;
 .dark-theme .mobile-menu-open {
   stroke: #e4e5e6;
   fill: #e4e5e6;
+}
+
+.dark-theme .menu-link:hover,
+.dark-theme .menu-link:active{
+color:#14c57c;
 }
