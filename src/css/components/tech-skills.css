@@ -3,7 +3,7 @@
 }
 
 .marquee {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   font-family: 'Poppins';
   font-size: 32px;
@@ -14,7 +14,7 @@
   transform: rotate(2deg);
   transform-origin: 2em 0em;
   padding: 32px 0px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .marquee-another {
@@ -27,6 +27,7 @@
   background: #bcdfd1;
   margin-top: 60px;
   padding: 32px 0px;
+  /* z-index: 1; */
 }
 
 .marquee-inner {
@@ -97,17 +98,17 @@
   margin-right: 24px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .marquee {
     transform-origin: 10em 0em;
   }
-}
+} */
 
 .dark-theme .marquee-line {
   color: #f0f0f0;
 }
 .dark-theme .marquee-another {
-  padding: 0;
+  background-color: #204136;
 }
 .dark-theme .marquee-line {
   background: #204136;
@@ -115,4 +116,9 @@
 
 .dark-theme .marquee {
   color: #14c57c;
+  background: #2a2d32;
+}
+
+.dark-theme .dot {
+  color: #e4e5e6;
 }
