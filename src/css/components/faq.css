@@ -83,7 +83,6 @@
 }
 
 .icon-dropdown {
-  color: #292929;
   fill: none;
   stroke: currentColor;
   width: 12px;
@@ -158,4 +157,9 @@
     max-width: 592px;
     margin-top: 276px;
   }
+}
+
+.dark-theme .ac-text, 
+.dark-theme .ac-trigger{
+  color: #F0F0F0;
 }

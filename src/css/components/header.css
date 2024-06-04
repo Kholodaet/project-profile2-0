@@ -12,7 +12,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-align: left;
-  color: #292929;
+  
 }
 .logo-second-name {
   font-family: 'Impact';
@@ -65,7 +65,6 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.06em;
-  color: #292929;
 }
 .logo-second {
   font-family: 'Impact';
@@ -130,7 +129,6 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #292929;
 }
 .mobile-item:not(:last-child) {
   margin-bottom: 24px;
@@ -160,7 +158,6 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #292929;
   }
 
   .logo-first-name {
@@ -223,7 +220,6 @@
     line-height: 32px;
     letter-spacing: 1.5px;
     text-align: left;
-    color: #292929;
   }
   .logo-second-name {
     font-family: 'Impact';
@@ -246,4 +242,60 @@
     padding-left: 0;
     padding-top: 2px;
   }
+}
+.theme-checkbox {
+  display: flex;
+  --toggle-size: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 6.25em;
+  height: 3.125em;
+  background: linear-gradient(to right, #E4E5E6 50%, #E4E5E6 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 99em;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+  content: "";
+  width: 2.25em;
+  height: 2.25em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: linear-gradient(to right, #00B068 50%, #00B068 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
+  border-radius: 50%;
+}
+
+.theme-checkbox:checked {
+  background: linear-gradient(to right, #292929 100%, #292929 100%) no-repeat;
+  background-position: 100%;
+}
+
+.dark-theme {
+  color: #F0F0F0;
+  background-color: #1e2023;
+}
+
+.dark-theme .logo-first-name,
+.dark-theme .menu-link{
+  color: #F0F0F0;
 }

@@ -1,5 +1,4 @@
 .about-me h2 {
-  color: #292929;
   margin-bottom: 40px;
 }
 .about-me {
@@ -23,7 +22,6 @@
 
 .bio p {
   margin-bottom: 10px;
-  color: #292929;
   font-family: 'Poppins';
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -193,7 +191,6 @@
 }
 
 .about-education-sublist-item {
-  color: #292929;
   font-family: 'Poppins';
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -216,4 +213,9 @@
     background-image: url('/img/about-me/bac-d-2x');
     width: 100%;
   }
+}
+
+.dark-theme .about,
+.dark-theme .about-two {
+  color: #F0F0F0;
 }

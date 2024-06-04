@@ -17,7 +17,6 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   margin-bottom: 40px;
 }
 
@@ -50,13 +49,11 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   opacity: 0.6;
   overflow-x: hidden;
   overflow-y: auto;
   height: 96px;
   align-self: stretch;
-  color: #292929;
   font-family: 'Poppins';
   font-size: 16px;
   font-style: normal;
@@ -86,9 +83,9 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   margin-bottom: 8px;
   font-style: normal;
+  color: #292929;
 }
 
 .slider-buttons {
@@ -167,4 +164,16 @@
   .reviews-container {
     max-width: 1280px;
   }
+  .reviews-title{
+    font-size: 108px;
+  }
+}
+
+.dark-theme .review-card-text,
+.dark-theme .review-card-author-name {
+  color: #f0f0f0;
+}
+
+.dark-theme .review-card{
+  background-color: #2a2d32;
 }
