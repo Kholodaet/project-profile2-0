@@ -176,6 +176,11 @@ color:#00b068
     color: #292929;
   }
 
+  .menu-link:hover,
+  .menu-link:active{
+    color:#00b068;
+}
+
   .logo-first-name {
     font-family: 'Impact';
     font-size: 32px;
@@ -219,19 +224,6 @@ color:#00b068
     padding: 64px;
   }
 
-  .menu-link {
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: left;
-    color: #292929;
-  }
-.menu-link:hover,
-.menu-link:active{
-color:#00b068;
-}
   .logo-first-name {
     font-family: 'Impact';
     font-size: 32px;
