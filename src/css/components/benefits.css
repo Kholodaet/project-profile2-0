@@ -11,7 +11,6 @@
 
 .section-benefits-title {
   text-transform: uppercase;
-  color: #292929;
   margin-bottom: 40px;
 }
 
@@ -37,7 +36,6 @@
   letter-spacing: 0.01em;
   font-weight: 400;
   text-transform: uppercase;
-  color: #292929;
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -172,4 +170,9 @@
     background-image: url('/img/benefits/smt-2x.png');
     width: 100%;
   }
+}
+
+
+.dark-theme .section-benefits-text{
+  color: #F0F0F0;
 }

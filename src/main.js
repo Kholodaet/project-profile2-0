@@ -31,3 +31,10 @@ manageModal();
 // scroll
 
 import './js/scroll-btn.js';
+
+// switch
+import { manageTheme } from './js/header.js';
+
+document.addEventListener("DOMContentLoaded", function() {
+  manageTheme();
+});

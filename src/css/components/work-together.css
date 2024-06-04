@@ -25,7 +25,6 @@
 
 .work-together-text {
   margin-bottom: 32px;
-  color: #292929;
 }
 
 .work-together-address {
@@ -41,7 +40,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,7 +56,6 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #292929;
   background: #e4e5e6;
 }
 
@@ -78,6 +75,7 @@
   position: absolute;
   right: 16px;
   top: 12px;
+  color: #292929;
 }
 
 .work-together-input-message {
@@ -143,6 +141,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  color: #292929;
 }
 
 .work-together-backdrop {
@@ -211,7 +210,6 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #292929;
 }
 
 @media screen and (min-width: 768px) {
@@ -311,4 +309,18 @@
     background-image: url('/img/benefits/smt-2x.png');
     width: 100%;
   }
+}
+
+
+.dark-theme .work-together-text,
+.dark-theme .work-together-link {
+  color: #F0F0F0;
+}
+
+.dark-theme .work-together-input {
+  background: #2a2d32;
+}
+
+.dark-theme .work-together-input::placeholder{
+color: rgba(240, 240, 240, 0.4);
 }
