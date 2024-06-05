@@ -89,7 +89,7 @@
   background-size: cover;
 } */
 .back-img {
-  max-width: 100%;
+  /* max-width: 100%; */
   background-image: url(/img/mobile/mob.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -140,6 +140,11 @@
   text-align: left;
   color: #292929;
 }
+
+.mobile-link:hover,
+.mobile-link:active {
+color:#00b068
+}
 .mobile-item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -170,6 +175,11 @@
     text-align: left;
     color: #292929;
   }
+
+  .menu-link:hover,
+  .menu-link:active{
+    color:#00b068;
+}
 
   .logo-first-name {
     font-family: 'Impact';
@@ -212,16 +222,6 @@
     width: 364px;
     height: 152px;
     padding: 64px;
-  }
-
-  .menu-link {
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: left;
-    color: #292929;
   }
 
   .logo-first-name {
@@ -330,6 +330,11 @@
   color: #f0f0f0;
 }
 
+.dark-theme .mobile-link:hover,
+.dark-theme .mobile-link:active {
+color:#00b068;
+}
+
 .dark-theme .logo-first {
   color: #f0f0f0;
 }
@@ -337,4 +342,9 @@
 .dark-theme .mobile-menu-open {
   stroke: #e4e5e6;
   fill: #e4e5e6;
+}
+
+.dark-theme .menu-link:hover,
+.dark-theme .menu-link:active{
+color:#14c57c;
 }
